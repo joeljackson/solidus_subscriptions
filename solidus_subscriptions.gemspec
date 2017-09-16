@@ -3,7 +3,7 @@ $:.push File.expand_path('../lib', __FILE__)
 require 'solidus_subscriptions/version'
 
 Gem::Specification.new do |s|
-  s.name        = 'solidus_subscriptions'
+  s.name        = 'solidus_subscriptions-alpha'
   s.version     = SolidusSubscriptions::VERSION
   s.summary     = 'Add subscription support to Solidus'
   s.description = 'Add subscription support to Solidus'
@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
 
   s.author    = 'Brendan Deere'
   s.email     = 'brendan@stembolt.com'
-  # s.homepage  = 'http://www.example.com'
+  s.homepage  = 'https://github.com/joeljackson/solidus_subscriptions'
 
   s.files = Dir["{app,config,db,lib}/**/*", 'LICENSE', 'Rakefile', 'README.md']
   s.test_files = Dir['test/**/*']
