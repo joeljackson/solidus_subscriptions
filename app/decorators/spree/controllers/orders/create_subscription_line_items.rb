@@ -23,7 +23,7 @@ module Spree
 
         def handle_subscription_line_items
           line_item = @current_order.line_items.find_by(variant_id: params[:variant_id])
-          create_subscription_line_item(line_item)
+          create_subscription_line_item(line_item) if line_item.present?
         end
       end
     end
